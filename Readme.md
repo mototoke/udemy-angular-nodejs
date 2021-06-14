@@ -14,4 +14,8 @@
 - bootstrap
 `npm install bootstrap --save`
 
-
+### server
+- express install
+`npm install express --save`
+- mongoose install
+`npm i mongoose --save`
