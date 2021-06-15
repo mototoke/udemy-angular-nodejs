@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ProductService } from '../shaerd/product.service';
 
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductListComponent } from './product-listings/product-listings.component';
@@ -27,7 +28,9 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     CommonModule
   ],
-  providers: [],
+  providers: [
+    ProductService
+  ],
   bootstrap: []
 })
 export class ProductModule { }
